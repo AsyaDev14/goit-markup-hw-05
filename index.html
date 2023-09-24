@@ -463,13 +463,23 @@
         </div>
         <!-- checkbox 5 -->
         <div class="modal-checkbox">
-          <input type="text"
-           class="modal-checkbox-input visually-hidden"
-           id="user-privacy"
-           type="checkbox"
-           value="true"
-           name="user-privacy" 
-           >
+          <input class="modal-checkbox-input visually-hidden"
+           id="user-privacy" 
+           value="true" 
+           type="checkbox" 
+           name="user-privacy"
+           required />
+          <label class="checkbox-label" for="user-privacy">
+            <span class="checkbox-span">
+              <svg class="checkbox-span-svg" width="10" height="8">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the&nbsp;
+            <a class="link privacy-link" href="#">Privacy Policy</a>
+          </label>
+        </div>
+        <!-- 
            <label for="user-privacy" class="checkbox-label">I accept the terms and conditions of the
             <a href="" class="link privacy-link">Privacy Policy</a>
             <span class="checkbox-span">
@@ -479,7 +489,7 @@
               </svg>
             </span>
            </label>
-        </div>
+        </div> -->
         <button class="modal-input-button" type="submit">Send</button>
       </form>
     </div>
